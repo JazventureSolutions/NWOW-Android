@@ -24,17 +24,53 @@
                 android:layout_marginStart="10dp"
                 android:src="@drawable/baseline_menu_24" />
 
+            <LinearLayout
+                android:id="@+id/userNameBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_semi_bold"
+                    android:maxWidth="140dp"
+                    android:maxLines="1"
+                    android:textColor="@color/button_clr"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/userUsername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/poppins_regular"
+                    android:maxWidth="140dp"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="11sp" />
+
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/activityName"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                android:layout_toEndOf="@id/menuIcon"
+                android:layout_toStartOf="@id/userNameBlock"
                 android:fontFamily="@font/opensans_semibold"
                 android:gravity="center"
-                android:textSize="16sp"
+                android:text="New World of Watches"
                 android:textAllCaps="true"
-                android:text="New World of Watches" />
+                android:textSize="16sp" />
 
         </RelativeLayout>
 

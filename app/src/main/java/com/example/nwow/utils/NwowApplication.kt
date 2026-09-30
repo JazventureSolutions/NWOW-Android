@@ -4,6 +4,8 @@ import android.app.Application
 import android.content.Context
 import com.example.nwow.config.API
 import com.example.nwow.config.RetrofitHelper
+import com.example.nwow.ui.auth.repository.AuthRepository
+import com.example.nwow.ui.auth.repository.TotpRepository
 import com.example.nwow.ui.main.nwow.repository.NwowRepository
 import com.example.nwow.ui.main.zagger.repository.ZaggerRepository
 
@@ -11,6 +13,8 @@ class NwowApplication : Application() {
 
     lateinit var zaggerRepository: ZaggerRepository
     lateinit var nwowRepository: NwowRepository
+    lateinit var totpRepository: TotpRepository
+    lateinit var authRepository: AuthRepository
 
     companion object {
         private lateinit var appContext: Context
@@ -30,5 +34,7 @@ class NwowApplication : Application() {
         val nwowApiService = RetrofitHelper.invokeNwow().create(API::class.java)
         zaggerRepository = ZaggerRepository(zaggerApiService, nwowApiService)
         nwowRepository = NwowRepository(nwowApiService)
+        totpRepository = TotpRepository(nwowApiService)
+        authRepository = AuthRepository(nwowApiService)
     }
 }

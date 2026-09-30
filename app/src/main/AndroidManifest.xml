@@ -27,7 +27,36 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".ui.login.LoginActivity"
+            android:theme="@style/Theme.Nwow"
+            android:exported="false" />
+        <activity
+            android:name=".ui.changepassword.ChangePasswordActivity"
+            android:theme="@style/Theme.Nwow"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.TotpSetupActivity"
+            android:theme="@style/Theme.Nwow"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.TotpChallengeActivity"
+            android:theme="@style/Theme.Nwow"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false" />
+        <activity
+            android:name=".ui.auth.TotpResetActivity"
+            android:theme="@style/Theme.Nwow"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false" />
+        <activity
             android:name=".ui.main.MainActivity"
+            android:theme="@style/Theme.Nwow"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="false" />
+        <activity
+            android:name=".ui.manage.AdminUsersActivity"
             android:theme="@style/Theme.Nwow"
             android:windowSoftInputMode="adjustPan"
             android:exported="false" />

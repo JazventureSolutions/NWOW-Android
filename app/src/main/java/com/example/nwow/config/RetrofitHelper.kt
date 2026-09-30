@@ -26,10 +26,11 @@ object RetrofitHelper {
             .connectTimeout(1, TimeUnit.MINUTES)
             .readTimeout(2, TimeUnit.MINUTES)
             .writeTimeout(2, TimeUnit.MINUTES)
+            .addInterceptor(AuthInterceptor())
             .build()
 
         return Retrofit.Builder()
-            .baseUrl("https://nwow.jazventuresolutions.com/public/api/")
+            .baseUrl("https://circumcisioncliniclondon.co.uk/nwow_updated/public/api/")
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
             .build()
