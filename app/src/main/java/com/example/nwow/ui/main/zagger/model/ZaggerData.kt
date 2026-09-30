@@ -1,0 +1,33 @@
+package com.example.nwow.ui.main.zagger.model
+
+data class ZaggerData(
+    val band_color: String?,
+    val band_material: String?,
+    val brand: String?,
+    val case_diameter: String?,
+    val case_tone: String?,
+    val case_type: String?,
+    val clasp_type: String?,
+    val collection: String?,
+    val crown_type: String?,
+    val customer_price: String?,
+    val dial_color: String?,
+    val dial_material: String?,
+    val gender: String?,
+    val item_description: String?,
+    val jewel: String?,
+    val media: List<String>,
+    val media_url: String?,
+    val movement: String?,
+    val movement_caliber: String?,
+    val no_of_diamonds: String?,
+    val number: String?,
+    val origin: String?,
+    val special_packaging: String?,
+    val stock: Int?,
+    val strap_size: String?,
+    val sub_collection: String?,
+    val title: String?,
+    val upc_code: String?,
+    val water_resistant: String?
+)

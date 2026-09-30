@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">NWOW</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="alert">Alert</string>
+    <string name="search">Search</string>
+    <string name="suggested_price">Get Suggested Price</string>
+    <string name="price">Price($)</string>
+    <string name="percentage">Percentage(%)</string>
+    <string name="in_hand">In Hand</string>
+    <string name="transit">Transit</string>
+    <string name="balance">Balance</string>
+
+    <string name="total_sales">Total Sales</string>
+    <string name="total_purchase">Total Purchase</string>
+    <string name="adjustment">Adjustment</string>
+    <string name="returnn">Return</string>
+    <string name="value">Value</string>
+    <string name="total_net_profit">Total Net Profit</string>
+    <string name="net_profit">Net Profit</string>
+    <string name="avg_price">Avg Price</string>
+    <string name="last_pur_price">Last Purchase Price</string>
+    <string name="rate_to_rate_ebay">Rate to Rate Ebay</string>
+    <string name="rate_to_rate_amz">Rate to Rate Amazon</string>
+    <string name="avg_profit">Avg Profit</string>
+    <string name="min_pur_price">Min Purchase Price</string>
+    <string name="max_sold_price">Max Sold Price</string>
+    <string name="highest_sold">Highest Sold</string>
+    <string name="last_sold">Last Sold</string>
+    <string name="sold_days">Sold Days</string>
+
+    <string name="sale_id">Sale ID</string>
+    <string name="sold_date">Sold Date</string>
+    <string name="sold_type">Sold Type</string>
+    <string name="sold_price">Sold Price</string>
+    <string name="shipping_price">Shipping Price</string>
+    <string name="shipping_paid">Shipping Paid</string>
+    <string name="ad_fees">Ad Fees</string>
+    <string name="portal_cost">Portal Cost</string>
+    <string name="fba_sales">FBA Sales</string>
+    <string name="account">Account</string>
+
+    <string name="purchase_invoice">Purchase Invoice</string>
+    <string name="purchase_date">Purchase Date</string>
+    <string name="purchase_qty">Purchase Quantity</string>
+    <string name="last_purchase">Last Purchase</string>
+    <string name="purchase_from">Purchase From</string>
+
+    <string name="return_id">Return ID</string>
+    <string name="return_sale_id">Return Sale ID</string>
+    <string name="return_date">Return Date</string>
+    <string name="return_sale_date">Return Sale Date</string>
+    <string name="fba_return">FBA Return</string>
+
+    <string name="adjustment_id">Adjustment ID</string>
+    <string name="adjustment_date">Adjustment Date</string>
+    <string name="adjustment_qty">Adjustment Quantity</string>
+    <string name="comments">Comments</string>
+
+    <string name="order_placed">Your Order Has Been Placed Successfully</string>
+    <string name="desc">The extraordinary vision of two perspectives merge to achieve creative and technical glory for the Invicta Artist Series. Utilizing a carefully selected Invicta model, the dial of the timepiece becomes an artist\'s canvas. Offering a captivating context for the painting, Invicta designers and the contributing artist mindfully implement the work on the dial creating vivid works of wearable art. The Invicta Artist Series, transforming the face of time.","title": "Invicta Men\'s 42582 Artist Automatic 3 Hand Black, Red, Gold Dial Watch</string>
+</resources>

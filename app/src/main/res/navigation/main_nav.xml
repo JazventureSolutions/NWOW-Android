@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/nwowFragment">
+    <fragment
+        android:id="@+id/zaggerFragment"
+        android:name="com.example.nwow.ui.main.zagger.view.ZaggerFragment"
+        android:label="ZaggerFragment" />
+    <fragment
+        android:id="@+id/nwowFragment"
+        android:name="com.example.nwow.ui.main.nwow.view.NwowFragment"
+        android:label="fragment_nwow"
+        tools:layout="@layout/fragment_nwow" />
+</navigation>

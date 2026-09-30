@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/zaggerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.main.MainActivity">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:id="@+id/searchModel"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/search"
+                android:background="@drawable/outline_border"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Model No..."
+                android:inputType="text"
+                android:paddingStart="10dp" />
+
+            <TextView
+                android:id="@+id/search"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/outline_border"
+                android:backgroundTint="@color/purple_700"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:text="Search"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/placeOrder"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/opensans_bold"
+                android:text="Invicta Men's 42582 Artist Automatic 3 Hand Black, Red, Gold Dial Watch"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="@string/desc"
+                android:textSize="10sp" />
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="25dp">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp">
+
+                    <TableRow
+                        android:background="@color/light_grey"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Model:" />
+
+                        <TextView
+                            android:id="@+id/model"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="12345" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Brand:" />
+
+                        <TextView
+                            android:id="@+id/brand"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Invicta" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/light_grey"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Stock:" />
+
+                        <TextView
+                            android:id="@+id/stock"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="50" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Price:" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="$185.00" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/light_grey"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Dial Color:" />
+
+                        <TextView
+                            android:id="@+id/color"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Gold" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Dial Material:" />
+
+                        <TextView
+                            android:id="@+id/material"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Sunray" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/light_grey"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Band Color:" />
+
+                        <TextView
+                            android:id="@+id/band_color"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Gold" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Band Material:" />
+
+                        <TextView
+                            android:id="@+id/band_material"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Stainless Steel" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/light_grey"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Case Tone:" />
+
+                        <TextView
+                            android:id="@+id/case_tone"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Gold" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Case Diameter:" />
+
+                        <TextView
+                            android:id="@+id/case_diameter"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="48.00" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/light_grey"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Strap Size:" />
+
+                        <TextView
+                            android:id="@+id/strap_size"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="26mm" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Jewel:" />
+
+                        <TextView
+                            android:id="@+id/jewel"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="20" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/light_grey"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="No of Diamonds:" />
+
+                        <TextView
+                            android:id="@+id/diamonds"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="1" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Clasp Type:" />
+
+                        <TextView
+                            android:id="@+id/clasp_type"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Fold over clasp with Safety" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/light_grey"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Crown Type:" />
+
+                        <TextView
+                            android:id="@+id/crown_type"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Pull" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Water Resistant:" />
+
+                        <TextView
+                            android:id="@+id/water_resistant"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="100mm" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/light_grey"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Movement:" />
+
+                        <TextView
+                            android:id="@+id/movement"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Automatic" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Origin:" />
+
+                        <TextView
+                            android:id="@+id/origin"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="China" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/light_grey"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Special Packaging:" />
+
+                        <TextView
+                            android:id="@+id/packaging"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="No" />
+
+                    </TableRow>
+
+                    <TableRow android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="UPC Code:" />
+
+                        <TextView
+                            android:id="@+id/upc_code"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="886678566198" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:background="@color/light_grey"
+                        android:padding="7dp">
+
+                        <TextView
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Collection:" />
+
+                        <TextView
+                            android:id="@+id/collection"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="Artist" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/placeOrder"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/outline_border"
+            android:backgroundTint="@color/purple_700"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center"
+            android:text="Place Order"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
